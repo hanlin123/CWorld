@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CWorld</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <!-- Root Screen -->
+    <string name="takePic">New</string>
+    <string name="see">Update</string>
+
+    <!-- Directory Screen -->
+    <string name="directory_cancel">Back</string>
+    
+    <!-- Picture Shooting Screen -->
+    <string name="reverse_shooting">rev</string>
+    <string name="cancel_shooting">Cancel</string>
+    <string name="takePic_shooting">Take</string>
+    
+    <!-- Profile Screen -->
+    <string name="apply">Apply</string>
+    <string name="cancel">Cancel</string>
+    <string name="name_hint">Set user name here</string>
+    <string name="age_hint">Set your age here</string>
+    
+    <!-- Review Screen -->
+    <string name="Comments">Comments</string>
+    <string name="comment_hint">comments here</string>
+    <string name="send_review">Send</string>
+    
+    <!-- Sync Screen -->
+    <string name="sycn">Sync</string>
+    <string name="take_pic">New</string>
+    <string name="choose_pic">Choose</string>
+    <string name="street">Street: </string>
+    <string name="city">City: </string>
+    <string name="time">Time: </string>
+    <string name="date">Date: </string>
+</resources>

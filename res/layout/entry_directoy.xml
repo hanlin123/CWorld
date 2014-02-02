@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="wrap_content"
+	android:background="@layout/list_selector"
+	android:orientation="horizontal" android:padding="5dip">
+	
+		
+	
+	<ImageView 
+	    android:id="@+id/entry_picSample"         android:layout_width="50dip"
+		android:layout_height="50dip" 	
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:padding="5sp"/>
+	
+	
+	<TextView 
+	    android:id="@+id/entry_address"         android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 	android:textSize="10sp"
+		android:layout_alignTop="@id/entry_picSample"
+		android:layout_toRightOf="@id/entry_picSample"
+		android:paddingLeft="5sp"
+		android:paddingRight="5sp"
+		android:paddingTop="5sp"/>
+	
+	<TextView 
+	    android:id="@+id/entry_author"         android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 	android:textSize="10sp"
+		android:layout_below="@id/entry_address"
+		android:layout_toRightOf="@id/entry_picSample"
+		android:paddingLeft="5sp"
+		android:paddingRight="5sp"/>
+	
+	<TextView 
+	    android:id="@+id/entry_timeTag"         android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 	android:textSize="15sp"
+		android:layout_alignParentRight="true"	android:textStyle="bold"
+		android:layout_centerVertical="true"
+		android:paddingRight="5sp"/>
+			
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    
+
+       <ImageView
+           android:id="@+id/wp1"
+           android:layout_width="104dp"
+           android:layout_height="136dp"
+           android:layout_centerHorizontal="true"
+           android:layout_alignParentTop="true"
+           android:src="@drawable/profilepic" />
+
+         <EditText
+             android:id="@+id/Name"
+             android:layout_below="@id/wp1"
+             android:layout_centerHorizontal="true"
+             android:layout_width="200dip"
+             android:layout_height="wrap_content"
+             android:textSize="15sp"
+             android:hint="@string/name_hint"/>
+         
+         <EditText
+             android:id="@+id/Age"
+             android:layout_centerHorizontal="true"
+             android:layout_below="@id/Name"
+             android:layout_width="200dip"
+             android:textSize="15sp"
+             android:layout_height="wrap_content"
+             android:hint="@string/age_hint"/>
+                  
+        
+
+   
+	<LinearLayout 
+	    android:id="@+id/controlBar_profile" 
+	    android:layout_alignParentBottom="true"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    
+	    	<Button 
+	    	    android:id="@+id/ApplyBtn"
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="wrap_content"
+	    	    android:gravity="center"
+	    	    android:layout_weight="1"
+	    	    android:text="@string/apply"
+	    	    android:textSize="20sp" />
+	    	<Button 
+	    	    android:id="@+id/CancelBtn"
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="wrap_content"
+	    	    android:gravity="center"
+	    	    android:layout_weight="1"
+	    	    android:text="@string/cancel"
+	    	    android:textSize="20sp" />
+	</LinearLayout>
+
+</RelativeLayout>

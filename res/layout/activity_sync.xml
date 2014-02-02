@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<!-- This file is /res/layout/main.xml -->
+
+
+       <ImageView
+           android:id="@+id/sycn_pic"
+           android:layout_width="wrap_content"
+           android:layout_height="200dp"
+           android:layout_centerHorizontal="true"
+           android:layout_alignParentTop="true"
+           
+           />
+       
+       <TextView
+          android:id="@+id/sync_loc_title"
+          android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:layout_below="@id/sycn_pic"
+		  android:paddingLeft="50dip"
+          android:gravity="left"
+          android:paddingTop="10dip"
+          android:text="@string/street"/>
+       
+        <TextView
+          android:id="@+id/sync_loc"
+          android:layout_width="200dip"
+		  android:layout_height="wrap_content"
+		  android:layout_alignTop="@id/sync_loc_title"
+		  android:layout_toRightOf="@id/sync_loc_title"
+		  android:paddingLeft="10dip"
+		  android:paddingTop="10dip"
+          android:gravity="left"/>
+        
+        <TextView
+          android:id="@+id/sync_city_title"
+          android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:layout_below="@id/sync_loc_title"
+          android:gravity="left"
+          android:paddingLeft="50dip"
+          android:text="@string/city"/>
+        
+         <TextView
+             android:id="@+id/sync_city"
+             android:layout_width="200dip"
+             android:layout_height="wrap_content"
+             android:layout_alignTop="@id/sync_city_title"
+		  	 android:layout_toRightOf="@id/sync_city_title"
+		  	 android:paddingLeft="10dip"
+             android:gravity="left"/>
+         
+         <TextView
+          android:id="@+id/sync_date_title"
+          android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:layout_below="@id/sync_city_title"
+          android:gravity="left"
+          android:paddingLeft="50dip"
+          android:paddingTop="20dip"
+          android:text="@string/date"/>
+        
+         <TextView
+             android:id="@+id/sync_date"
+             android:layout_width="200dip"
+             android:layout_height="wrap_content"
+             android:layout_alignTop="@id/sync_date_title"
+             android:paddingTop="20dip"
+             android:paddingLeft="10dip"
+		  	 android:layout_toRightOf="@id/sync_date_title"
+             android:gravity="left"/>
+         
+        <TextView
+          android:id="@+id/sync_time_title"
+          android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:layout_below="@id/sync_date_title"
+		  
+          android:gravity="left"
+          android:paddingLeft="50dip"
+          android:text="@string/time"/>
+        
+         <TextView
+             android:id="@+id/sync_time"
+             android:layout_width="200dip"
+             android:layout_height="wrap_content"
+             android:layout_alignTop="@id/sync_time_title"
+		  	 android:layout_toRightOf="@id/sync_time_title"
+		  	 android:paddingLeft="10dip"
+             android:gravity="left"/>
+         
+
+	<LinearLayout 
+	    android:id="@+id/sync_controlBar" 
+	    android:layout_alignParentBottom="true"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    
+	    	<Button 
+	    	    android:id="@+id/sycn_cancel"
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="wrap_content"
+	    	    android:gravity="center"
+	    	    android:layout_weight="1"
+	    	    android:text="@string/cancel_shooting"
+	    	    android:textSize="20sp" />
+	    	<Button 
+	    	    android:id="@+id/sycn"
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="wrap_content"
+	    	    android:gravity="center"
+	    	    android:layout_weight="1"
+	    	    android:text="@string/sycn"
+	    	    android:textSize="20sp" />
+	</LinearLayout>
+
+	<LinearLayout 
+	    android:id="@+id/sync_newPic" 
+	    android:layout_above="@id/sync_controlBar"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    
+	    	<Button 
+	    	    android:id="@+id/take_pic"
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="wrap_content"
+	    	    android:gravity="center"
+	    	    android:layout_weight="1"
+	    	    android:text="@string/take_pic"
+	    	    android:textSize="20sp" />
+	    	<Button 
+	    	    android:id="@+id/choose_pic"
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="wrap_content"
+	    	    android:gravity="center"
+	    	    android:layout_weight="1"
+	    	    android:text="@string/choose_pic"
+	    	    android:textSize="20sp" />
+	</LinearLayout>
+	
+</RelativeLayout>
